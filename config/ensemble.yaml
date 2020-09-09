@@ -1,0 +1,8 @@
+name: NBeatsEnsemble
+aggregation_method: median # [median | mean]
+
+data_dir: ../data/M4
+load_subset: hourly
+test: True
+validation_size: 0.2
+h_mult: 7 # Horizon multiplier for backast length (LH in paper)

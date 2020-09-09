@@ -1,0 +1,26 @@
+name: NBEATS_WA
+
+data_dir: ../data/M4
+load_subset: hourly
+test: True
+
+# Train parameters
+loss: SymmetricMAPELoss # Valid entries: <SymmetricMAPELoss | MAPELoss>
+batch_size: 128
+epochs: 2
+epoch_sample_size: 512
+lh: 10
+lr: 1.0e-4
+validation_size: 0.2
+h_mult: 10 # Horizon multiplier for backast length (LH in paper)
+
+
+# Model parameters
+# [ multinomial | argmax | weighted |
+#   argmax_dropout | weighted_dropout ]
+weighted_aggregation_method: weighted_dropout
+
+save_model: True
+hidden_layer_units: 512
+submodel_names: None
+

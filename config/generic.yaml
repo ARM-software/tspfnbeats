@@ -1,0 +1,25 @@
+# Data
+data_dir: ../data/M4
+load_subset: hourly
+test: True
+validation_size: 0.2
+
+# Train parameters
+loss: SymmetricMAPELoss # Valid entries: <SymmetricMAPELoss | MAPELoss>
+batch_size: 128
+epochs: 2
+epoch_sample_size: 512
+lh: 10
+lr: 1.0e-4
+h_mult: 7 # Horizon multiplier for backast length (LH in paper)
+
+# Model parameters
+save_model: True
+share_weights_in_stack: False
+thetas_dim: (16,)
+stack_types: (BlockType.GENERIC_BLOCK,)
+nb_blocks_per_stack: 10
+n_stacks: 2
+hidden_layer_units: (12, )
+
+model_type: generic

@@ -1,0 +1,25 @@
+# Data parameters
+data_dir: ../data/M4
+load_subset: yearly
+test: True
+validation_size: 0.2
+
+# Train parameters
+loss: SymmetricMAPELoss # Valid entries: <SymmetricMAPELoss | MAPELoss>
+batch_size: 128
+epochs: 2
+epoch_sample_size: 512
+lh: 10
+lr: 1.0e-4
+h_mult: 7 # Horizon multiplier for backast length (LH in paper)
+
+# Model parameters
+save_model: True
+share_weights_in_stack: True
+thetas_dim: (2, 48)
+stack_types: (BlockType.TREND_BLOCK, BlockType.SEASONALITY_BLOCK)
+n_stacks: 2
+nb_blocks_per_stack: 3
+hidden_layer_units: (4, 12) # (256, 2048)
+
+model_type: interpretable

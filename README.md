@@ -28,6 +28,15 @@ The backpropagated gradient of loss would then update only those members which c
 
 
 
+##### Dependencies
+This project has been developed with the following packages
+- tensorflow (2.3)
+- pyyaml (5.3.1)
+- pandas (1.1.1)
+- scikit-learn (0.23.2)
+- tqdm (4.48.2)
+- matplotlib (3.3.1)
+
 [1]: R. A. Jacobs, M. I. Jordan, S. J. Nowlan, G. E. Hinton, “Adaptive Mixtures of Local Experts”, Neural Computation, 3: 79-87, 1991
 
 [2]: L. Breiman, “Bagging predictors”, Machine Learning, 24(2):123–140, Aug 1996

@@ -2,6 +2,8 @@
 Interpretation experiment:
 Train and test individual generic or interpretable N-BEAT models.
 """
+import sys
+sys.path.insert(0, '../')
 
 import os, yaml
 from pathlib import Path

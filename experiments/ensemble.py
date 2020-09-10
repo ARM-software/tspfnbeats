@@ -8,6 +8,9 @@
  Experiment outputs are stored in ./results/ensemble/<M4 subset>/
 
 """
+import sys
+sys.path.insert(0, '../')
+
 import os
 import yaml
 from pathlib import Path

@@ -1,8 +1,12 @@
-import os, yaml
+import sys
+sys.path.insert(0, '../')
+
+import os
+import yaml
 from pathlib import Path
 from functools import partial
 from itertools import product
-from typing import Tuple, Iterable, Dict, Optional
+from typing import Tuple, Iterable, Dict
 
 from utils.tools import silence_tensorflow
 silence_tensorflow()  # Needs to be called before importing tf

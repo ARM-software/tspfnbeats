@@ -1,9 +1,13 @@
-import os, yaml
+import sys
+sys.path.insert(0, '../')
+
+import os
+import yaml
 import tensorflow as tf
 from collections import defaultdict
 from functools import partial
 
-from data.M4.m4dataset import M4Dataset, M4Sources, M4SourcesLite, Subset
+from data.M4.m4dataset import M4Dataset, M4SourcesLite, Subset
 from models.nbeats.NBeatsTF import NBeatsTF
 from utils.model_params import NBeatsParams
 from utils.train_params import TrainParams
